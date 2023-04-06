@@ -1,5 +1,3 @@
-const downloadBtn = document.getElementById('download-btn');
-
 const downloadSection = document.getElementById('download-section');
 const navLinks = document.getElementById('links');
 function beforePrint() {
