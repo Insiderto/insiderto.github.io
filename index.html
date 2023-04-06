@@ -3,166 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Rafael Kamaltinov - CV</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #F7F8FA;
-            color: #333;
-        }
-
-        /* for desktop padding inline 15vw */
-        @media (min-width: 768px) {
-            body {
-                padding-inline: 15vw;
-            }
-        }
-
-        /* for mobile padding inline 5vw */
-        @media (max-width: 767px) {
-            body {
-                padding-inline: 5vw;
-            }
-        }
-
-
-        h1,
-        h2,
-        p,
-        li {
-            margin: 0;
-            padding: 0;
-        }
-
-        h1 {
-            font-size: 36px;
-            color: #444;
-        }
-
-        h2 {
-            font-size: 28px;
-            margin-top: 30px;
-            color: #444;
-        }
-
-        p,
-        li {
-            font-size: 16px;
-            line-height: 1.5;
-            margin-bottom: 10px;
-            color: #666;
-        }
-
-        ul ul li {
-            font-size: 14px;
-            margin-bottom: 5px;
-        }
-
-        section li ul {
-            margin-left: 20px;
-        }
-
-        a {
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: #000;
-        }
-
-        p,
-        li {
-            font-size: 16px;
-            line-height: 1.5;
-            margin-bottom: 10px;
-            color: #666;
-        }
-
-        header {
-            background-color: #5A5A5A;
-            color: #fff;
-            padding: 20px;
-        }
-
-        header h1 {
-            font-size: 36px;
-            color: #fff;
-        }
-
-        header p {
-            font-size: 16px;
-            color: #fff;
-        }
-
-        section {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 30px;
-            border-radius: 5px;
-        }
-
-        section h2 {
-            font-size: 28px;
-            margin-top: 0;
-            margin-bottom: 20px;
-            color: #444;
-        }
-
-        section ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        section li ul {
-            margin-left: 20px;
-        }
-
-        a {
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: #000;
-        }
-
-        .badges {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 10px;
-        }
-
-        .badges span {
-            display: inline-block;
-            padding: 6px 12px;
-            margin: 5px;
-            font-size: 12px;
-            text-align: center;
-            white-space: nowrap;
-            vertical-align: middle;
-            cursor: default;
-            background-color: #E8E9EB;
-            border-radius: 4px;
-            color: #333;
-        }
-
-        button {
-            background: none;
-            border: none;
-            color: #333;
-            text-decoration: underline;
-            cursor: pointer;
-        }
-    </style>
-    <link type="image/png" sizes="16x16" rel="icon" href="images/icons8-cv-office-16.png">
-    <link type="image/png" sizes="32x32" rel="icon" href="images/icons8-cv-office-32.png">
-    <script src="https://kit.fontawesome.com/ece80580e9.js" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet"/>
+    <link href="images/icons8-cv-office-16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="images/icons8-cv-office-32.png" rel="icon" sizes="32x32" type="image/png">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/ece80580e9.js"></script>
 </head>
 
 <body>
@@ -177,8 +23,7 @@
             <li><strong>Name:</strong> Rafael Kamaltinov</li>
             <li><strong>Email:</strong> <a href="mailto:alonixg47@gmail.com">alonixg47@gmail.com</a></li>
             <li>
-                <strong>Phone:</strong>
-                +420 603 815 043,
+                <strong>Phone:</strong> <a href="tel:+420603815043">+420 603 815 043</a>,
                 <a aria-label="Telegram" href="https://t.me/eloke" target="_blank"><i
                         class="fa-brands fa-telegram"></i></a>
                 <a aria-label="LinkedIn" href="https://www.linkedin.com/in/raphael-kamaltinov-045840131/"
@@ -304,14 +149,7 @@
     </section>
     <!-- Thanks for taking the time to thoroughly review my resume! I hope you found everything you were looking for. Keep up the great work! -->
 </main>
-<script>
-    const downloadBtn = document.getElementById('download-btn');
-
-    downloadBtn.addEventListener('click', () => {
-        document.getElementById('download-section').style.display="none";
-        print()
-    });
-</script>
+<script src="script.es6"></script>
 </body>
 
 </html>
