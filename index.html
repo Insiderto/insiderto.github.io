@@ -10,9 +10,19 @@
     <link href="images/icons8-cv-office-32.png" rel="icon" sizes="32x32" type="image/png">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/ece80580e9.js"></script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P2BGKP52TT"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-P2BGKP52TT');
+</script>
+
 
 <body onafterprint="afterPrint()" onbeforeprint="beforePrint()">
-<header>
+<header id="header">
     <h1>Rafael Kamaltinov</h1>
     <p>Software engineer</p>
 
@@ -157,6 +167,7 @@
     <section id="download-section">
         <button id="download-btn" onclick="print()"><i class="fa-solid fa-print"></i> Print</button>
     </section>
+    <a id="scroll-top-button" href="#header" title="Scroll to top"><i class="fa-solid fa-chevron-up"></i></a>
     <!-- Thanks for taking the time to thoroughly review my resume! I hope you found everything you were looking for. Keep up the great work! -->
 </main>
 <script src="script.js"></script>
